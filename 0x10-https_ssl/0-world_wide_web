@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Usage: ./1-world_wide_web <domain> <subdomain>
 # Create a Bash script that can show details regarding the subdomains.
 
 domain_information () {
@@ -8,10 +9,10 @@ domain_information () {
 
 if [ "$#" == 1 ]
 then
-  dns_config "$1" "www"
-  dns_config "$1" "lb-01"
-  dns_config "$1" "web-01"
-  dns_config "$1" "web-02"
+  domain_information "$1" "www"
+  domain_information "$1" "lb-01"
+  domain_information "$1" "web-01"
+  domain_information "$1" "web-02"
 elif [ "$#" == 2 ]
 then
   domain_information "$1" "$2"
