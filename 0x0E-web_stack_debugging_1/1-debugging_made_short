@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Sets up the Nginx server to use port 80 for incoming connections.
-
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx start
 kill "$(pgrep 'nginx' | head -1)"
