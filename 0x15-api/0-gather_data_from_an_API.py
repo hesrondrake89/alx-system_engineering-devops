@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Returns to-do list information for a given employee ID."""
+"""Retrieve the task list details associated with a specific employee identification number."""
 import requests
 import sys
 
