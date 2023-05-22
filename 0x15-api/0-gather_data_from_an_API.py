@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Retrieves task information from a to-do list based on an employee's ID."""
-from requests import get
-from sys import argv
+"""Returns to-do list information for a given employee ID."""
+import requests
+import sys
 
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
