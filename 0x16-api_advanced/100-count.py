@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""The count_words function is present within the code."""
+"""Contains the count_words function"""
 import requests
 
 
 def count_words(subreddit, word_list, found_list=[], after=None):
+    '''Prints counts of given words found in hot posts of a given subreddit.
 
     Args:
         subreddit (str): The subreddit to search.
