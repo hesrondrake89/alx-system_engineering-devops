@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" A function to fetch subscriber information from a specific subreddit on Reddit"""
 import requests
 
 def number_of_subscribers(subreddit):
