@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-"""Function to query a list of all hot posts on a given Reddit subreddit."""
+"""
+A function that retrieves a collection of all popular
+posts from a specified subreddit on Reddit
+"""
 import requests
 
 
 def recurse(subreddit, hot_list=[], after="", count=0):
-    """Returns a list of titles of all hot posts on a given subreddit."""
+    """
+    Provide a list containing the titles of all
+    popular posts from a specified subreddit.
+    """
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
