@@ -1,4 +1,4 @@
-# Fix 500 error when a GET HTTP method is requested to Apache web server
+# Resolve the occurrence of a 500 error when an HTTP GET request is made to an Apache web server.
 
 exec {'replace':
   provider => shell,
