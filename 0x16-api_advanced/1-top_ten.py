@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""A function that displays the current trending posts within a chosen subreddit on Reddit."""
+"""Function to print hot posts on a given Reddit subreddit."""
 import requests
 
+
 def top_ten(subreddit):
+    """Print the titles of the 10 hottest posts on a given subreddit."""
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
         "User-Agent": "linux:0x16.api.advanced:v1.0.0 (by /u/bdov_)"
