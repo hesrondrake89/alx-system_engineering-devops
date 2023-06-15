@@ -6,7 +6,7 @@ server {
     listen      [::]:80 default_server ipv6only=on;
 
   
-    server_name ;54.157.171.139
+    server_name 54.157.171.139;
 
    
     add_header  X-Served-By 165586-web-01;
